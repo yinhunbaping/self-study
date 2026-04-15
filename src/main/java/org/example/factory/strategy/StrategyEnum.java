@@ -4,7 +4,8 @@ package org.example.factory.strategy;
 public enum StrategyEnum {
     PLAN_A(1, "妙计一"),
     PLAN_B(2, "妙计二"),
-    PLAN_C(3, "妙计三")
+    PLAN_C(3, "妙计三"),
+    PLAN_D(4, "妙计四")
     ;
 
     private final Integer id;

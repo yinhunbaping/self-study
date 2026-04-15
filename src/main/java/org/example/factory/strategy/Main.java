@@ -18,6 +18,10 @@ public class Main {
         StrategyContext strategyThree = new StrategyContext(new StrategyThree());
         strategyThree.operate();
 
+        // 执行策略四
+        StrategyContext strategyFour = new StrategyContext(new StrategyFour());
+        strategyFour.operate();
+
         System.out.println("====================");
 
     }
@@ -34,6 +38,10 @@ public class Main {
         // 获取策略3
         AbstractStrategy strategy3 = strategyFactory.getStrategy(StrategyEnum.PLAN_C);
         strategy3.exec();
+
+        // 获取策略4
+        AbstractStrategy strategy4 = strategyFactory.getStrategy(StrategyEnum.PLAN_D);
+        strategy4.exec();
     }
 
 }
